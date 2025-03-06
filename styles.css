@@ -1,0 +1,79 @@
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f9e7e7; /* Light pink background */
+}
+
+/* Container for the content */
+.container {
+  text-align: center;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5rem;
+  color: #ff6f61; /* Coral color */
+  animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade-in animation for the heading */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Sticker (hugging emoji) styling */
+p {
+  font-size: 3rem;
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+/* Floating animation for the sticker */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* "Yes" button styling */
+#yesButton {
+  background-color: #77dd77; /* Light green */
+  color: white;
+}
+
+/* Hover effect for "Yes" button */
+#yesButton:hover {
+  background-color: #5cb85c; /* Darker green */
+}
+
+/* "No" button styling */
+#noButton {
+  background-color: #ff6961; /* Light red */
+  color: white;
+  position: absolute; /* Allows the button to move */
+}
+
+/* Picture styling */
+#loveImage {
+  max-width: 300px; /* Adjust the size as needed */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}
